@@ -1,0 +1,71 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp1.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="758">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Button x:Name="aButton" Grid.Row="0" Grid.Column="0" Margin="4" Content="A" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="bButton" Grid.Row="0" Grid.Column="1" Margin="4" Content="B" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="cButton" Grid.Row="0" Grid.Column="2" Margin="4" Content="C" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="dButton" Grid.Row="0" Grid.Column="3" Margin="4" Content="D" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+
+            <Button x:Name="eButton" Grid.Row="1" Grid.Column="0" Margin="4" Content="E" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="fButton" Grid.Row="1" Grid.Column="1" Margin="4" Content="F" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="gButton" Grid.Row="1" Grid.Column="2" Margin="4" Content="G" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="hButton" Grid.Row="1" Grid.Column="3" Margin="4" Content="H" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            
+            <Button x:Name="iButton" Grid.Row="2" Grid.Column="0" Margin="4" Content="H" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="jButton" Grid.Row="2" Grid.Column="1" Margin="4" Content="I" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="kButton" Grid.Row="2" Grid.Column="2" Margin="4" Content="J" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="lButton" Grid.Row="2" Grid.Column="3" Margin="4" Content="K" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+
+            <Button x:Name="mButton" Grid.Row="2" Grid.Column="0" Margin="4" Content="H" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="nButton" Grid.Row="2" Grid.Column="1" Margin="4" Content="I" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="oButton" Grid.Row="2" Grid.Column="2" Margin="4" Content="J" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="pButton" Grid.Row="2" Grid.Column="3" Margin="4" Content="K" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+
+            <Button x:Name="qButton" Grid.Row="3" Grid.Column="0" Margin="4" Content="Q" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="rButton" Grid.Row="3" Grid.Column="1" Margin="4" Content="R" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="sButton" Grid.Row="3" Grid.Column="2" Margin="4" Content="S" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="tButton" Grid.Row="3" Grid.Column="3" Margin="4" Content="T" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+
+            <Button x:Name="uButton" Grid.Row="4" Grid.Column="0" Margin="4" Content="U" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="vButton" Grid.Row="4" Grid.Column="1" Margin="4" Content="V" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="wButton" Grid.Row="4" Grid.Column="2" Margin="4" Content="W" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="xButton" Grid.Row="4" Grid.Column="3" Margin="4" Content="X" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+
+            <Button x:Name="yButton" Grid.Row="5" Grid.Column="1" Margin="4" Content="Y" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+            <Button x:Name="zButton" Grid.Row="5" Grid.Column="2" Margin="4" Content="Z" MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Click="CharButtonClick" />
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
