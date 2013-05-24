@@ -19,11 +19,16 @@ namespace PhoneApp1
     public partial class MainPage : PhoneApplicationPage
     {
         List<string> dictionary = new List<string>();
+        App main = (App)Application.Current;
+
+        // Public variables that get set by other screens
+        public char selected = ' ';
 
         // Constructor
         public MainPage()
         {
             InitializeComponent();
+
             // Load up a stream reader to go through our internal text dictionary
             StreamResourceInfo words = Application.GetResourceStream(new Uri("/PhoneApp1;component/words.txt", UriKind.Relative));
             if (words == null)
@@ -43,15 +48,26 @@ namespace PhoneApp1
             }
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (main.charCount == -1)
+            {
+                NavigationService.Navigate(new Uri("/CountSelect.xaml", UriKind.Relative));
+            }
+            // For now just assume they're returning from character selection
+            Recalculate();
+        }
+
         private void GuessClick2(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/CharSelect.xaml", UriKind.Relative));
         }
 
-        private void GuessClick(object sender, RoutedEventArgs e)
+        private void Recalculate()
         {
             // Compile our regex ahead of time for speeds
-            Regex pattern = new Regex("^" + puzzleName.Text + "$", RegexOptions.Compiled);
+            string regex = main.guessString.Replace("*", ".");
+            Regex pattern = new Regex("^" + regex + "$", RegexOptions.Compiled);
 
             // book keeping on the matching statistics
             int matchCount = 0;

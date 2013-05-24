@@ -10,10 +10,12 @@ c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\Bin\
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\Bin\Debug\PhoneApp1_Debug_AnyCPU.xap
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\App.g.cs
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\MainPage.g.cs
+c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\CharSelect.g.cs
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.g.resources
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.Resources.AppResources.resources
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.csproj.GenerateResource.Cache
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.dll
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\PhoneApp1.pdb
 c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\XapCacheFile.xml
-c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\CharSelect.g.cs
+c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\MatchSelect.g.cs
+c:\users\t-iscook\documents\visual studio 2012\Projects\PhoneApp1\PhoneApp1\obj\Debug\CountSelect.g.cs

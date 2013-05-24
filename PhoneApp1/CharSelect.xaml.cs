@@ -8,12 +8,15 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Diagnostics;
+using System.Windows.Media;
 
 namespace PhoneApp1
 {
-    public partial class Page1 : PhoneApplicationPage
+    public partial class CharSelect : PhoneApplicationPage
     {
-        public Page1()
+        public MainPage parent = null;
+
+        public CharSelect()
         {
             InitializeComponent();
         }
@@ -21,7 +24,17 @@ namespace PhoneApp1
         private void CharButtonClick(object sender, RoutedEventArgs e)
         {
             // Grab the character that was pressed and pass it back to our previous form
-            NavigationService.Navigate(new Uri("/MainPage.xaml?val=" + ((Button)sender).Content, UriKind.Relative));
+            App main = Application.Current as App;
+            string letter = (string)((Button)sender).Content;
+            main.selectedCharacter = letter[0];
+            //NavigationService.GoBack();
+            NavigationService.Navigate(new Uri("/MatchSelect.xaml", UriKind.Relative));
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Debug.WriteLine(e.ToString());
+        }
+
     }
 }

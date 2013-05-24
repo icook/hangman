@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using PhoneApp1.Resources;
+using System.Collections.Generic;
 
 namespace PhoneApp1
 {
@@ -17,6 +18,12 @@ namespace PhoneApp1
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public static PhoneApplicationFrame RootFrame { get; private set; }
+
+        public char selectedCharacter = ' ';
+        public int guesses = 0;
+        public string guessString = "";
+        public List<string> charIntensity = new List<string>();
+        public int charCount = -1;
 
         /// <summary>
         /// Constructor for the Application object.
